@@ -1,0 +1,22 @@
+<form
+  id="formName"
+  name="formName"
+  ng-submit="controller.testForm(this)"
+  >
+
+  <input 
+    type="checkbox"
+    id="testBox"
+    name="testBox"
+    value="Bike"
+    ng-model="controller.isChecked"
+    >
+  <label for="testBox">Is checkbox checked?</label>
+
+  <input
+    type="submit"
+    id="submitForm"
+    name="submitForm"
+    label="Submit form"
+    >
+</form>
