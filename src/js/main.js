@@ -2,13 +2,11 @@ angular.module('application', [])
 
 
 .controller('testController', function () {
+  // value must be declared so that it can be used as an ng-model
+  this.isBoxChecked = false;
 
-  console.log('--- testController ---');
-
-  this.testForm = function (scope) {
-
-    console.log('scope.isChecked: ', scope.isChecked);
-
+  this.testForm = function () {
+    // retrieving the value from the ng-model is then possible
+    console.log('is check box checked: ' + this.isBoxChecked);
   }
-
 });
